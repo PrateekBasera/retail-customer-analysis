@@ -12,14 +12,14 @@ The Python workflow explores transaction history and customer responses to ident
 
 ### Key Areas of Analysis
 
-* Customer purchasing behavior
-* Revenue trends
-* Customer value and spending patterns
-* Top customers by revenue contribution
-* Monthly revenue performance
-* Customer retention through cohort analysis
-* VIP customer spending behavior
-* Customer churn distribution
+- Customer purchasing behavior
+- Revenue trends
+- Customer value and spending patterns
+- Top customers by revenue contribution
+- Monthly revenue performance
+- Customer retention through cohort analysis
+- VIP customer spending behavior
+- Customer churn distribution
 
 ---
 
@@ -27,12 +27,12 @@ The Python workflow explores transaction history and customer responses to ident
 
 The analysis provides a customer-centric view of the retail business by examining both transaction activity and customer response behavior.
 
-* **Customer Behavior:** Transaction history is used to understand customer purchase frequency, spending, and recency.
-* **Revenue Analysis:** Transaction amounts are aggregated to identify revenue patterns across calendar months and over the available transaction period.
-* **Customer Value:** Customer-level features are calculated using recency, frequency, monetary value, and response activity.
-* **Retention Analysis:** Cohort analysis is used to examine customer retention patterns based on the month of a customer's first purchase.
-* **VIP Customers:** High-value customers are identified based on their total transaction spending.
-* **Churn Analysis:** Customer response data is used to classify and analyze active and churned customer groups.
+- **Customer Behavior:** Transaction history is used to understand customer purchase frequency, spending, and recency.
+- **Revenue Analysis:** Transaction amounts are aggregated to identify revenue patterns across calendar months and over the available transaction period.
+- **Customer Value:** Customer-level features are calculated using recency, frequency, monetary value, and response activity.
+- **Retention Analysis:** Cohort analysis is used to examine customer retention patterns based on the month of a customer's first purchase.
+- **VIP Customers:** High-value customers are identified based on their total transaction spending.
+- **Churn Analysis:** Customer response data is used to classify and analyze active and churned customer groups.
 
 ---
 
@@ -40,20 +40,20 @@ The analysis provides a customer-centric view of the retail business by examinin
 
 The project uses two raw datasets:
 
-* **Retail Transactions:** Customer IDs, transaction dates, and transaction amounts.
-* **Customer Response:** Customer IDs and response indicators representing customer status.
+- **Retail Transactions:** Customer IDs, transaction dates, and transaction amounts.
+- **Customer Response:** Customer IDs and response indicators representing customer status.
 
 ### Key Technical Implementations
 
-* **Data Integration:** Merged transaction and response datasets using `customer_id`.
-* **Data Cleaning:** Handled missing response values and duplicate transaction records.
-* **Date Standardization:** Converted transaction dates into a consistent datetime format.
-* **Customer-Level Aggregation:** Created customer-level behavioral features from transaction history.
-* **RFM-Style Features:** Calculated recency, frequency, and monetary value for each customer.
-* **Revenue Analysis:** Aggregated transaction values to examine revenue patterns over time.
-* **Cohort Analysis:** Built monthly customer cohorts and retention matrices.
-* **Customer Segmentation:** Examined high-value/VIP customer spending patterns.
-* **Churn Analysis:** Evaluated customer response status at the customer level.
+- **Data Integration:** Merged transaction and response datasets using `customer_id`.
+- **Data Cleaning:** Handled missing response values and duplicate transaction records.
+- **Date Standardization:** Converted transaction dates into a consistent datetime format.
+- **Customer-Level Aggregation:** Created customer-level behavioral features from transaction history.
+- **RFM-Style Features:** Calculated recency, frequency, and monetary value for each customer.
+- **Revenue Analysis:** Aggregated transaction values to examine revenue patterns over time.
+- **Cohort Analysis:** Built monthly customer cohorts and retention matrices.
+- **Customer Segmentation:** Examined high-value/VIP customer spending patterns.
+- **Churn Analysis:** Evaluated customer response status at the customer level.
 
 ---
 
@@ -105,7 +105,7 @@ The project includes visualizations covering several dimensions of customer and 
 
 ### Revenue Timeline
 
-![Revenue Timeline](visuals/revenue_timeline.png)
+![Revenue Timeline](visuals/monthly_revenue_timeline.png)
 
 ### Top 10 Customers
 
@@ -123,8 +123,8 @@ The project also includes a MySQL schema and data-loading workflow.
 
 The SQL component defines the database structure for:
 
-* `transactions`
-* `response`
+- `transactions`
+- `response`
 
 The Python workflow uses **SQLAlchemy** and **PyMySQL** to connect to the MySQL database and load the cleaned datasets.
 
